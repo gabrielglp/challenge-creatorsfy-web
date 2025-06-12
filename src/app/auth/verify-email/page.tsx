@@ -122,7 +122,7 @@ const VerifyEmailContent = () => {
 
   return (
     <AuthLayout>
-      <div className="flex flex-col items-center md:items-start text-center md:text-left mb-0 xl:mb-28 mt-14">
+      <div className="flex flex-col items-center md:items-start text-center md:text-left mb-0 xl:mb-28">
         <div className="w-full flex items-center mb-12 md:hidden border-b pb-2">
           <button
             onClick={handleGoBack}
