@@ -45,7 +45,7 @@ const RegisterPage = () => {
 
   return (
     <AuthLayout>
-      <div className="flex flex-col items-start h-full px-4 mt-24 md:mt-0">
+      <div className="flex flex-col items-start h-full px-4 mt-12">
         <h2 className="text-xl font-semibold mb-1 text-creatorsfy-black">Cadastre-se</h2>
         <p className="text-creatorsfy-gray-dark mb-8">Crie uma conta para continuar.</p>
 

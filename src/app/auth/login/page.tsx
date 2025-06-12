@@ -42,7 +42,7 @@ const LoginPage = () => {
 
   return (
     <AuthLayout>
-      <div className="flex flex-col items-start w-full h-full mt-60 px-4 md:mt-0">
+      <div className="flex flex-col items-start w-full h-full px-4 mt-12 md:mt-0">
 
         <h2 className="text-xl font-semibold mb-1 text-creatorsfy-black w-full text-start md:text-left">Bem-Vindo de Volta</h2>
         <p className="text-creatorsfy-gray-dark mb-8 w-full text-start md:text-left text-[16px]">Entre e acesse sua conta</p>
