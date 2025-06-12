@@ -31,7 +31,7 @@ const WelcomePage = () => {
         </h1>
         
         <div className="space-y-4">
-          <Button className="bg-white py-4 rounded-sm" fullWidth size="lg">
+          <Button variant="primary" className="bg-white py-4 rounded-sm" fullWidth size="lg">
             <Link className="text-creatorsfy-blue-deep200 text-xl font-medium" href="/auth/register">
               Iniciar Cadastro
             </Link>

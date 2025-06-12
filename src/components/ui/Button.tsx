@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
   const baseStyles = 'font-normal transition-colors';
 
   const variantClasses = {
-    primary: 'bg-creatorsfy-blue-dark text-white hover:bg-creatorsfy-blue-hover font-normal',
+    primary: 'bg-creatorsfy-blue-dark text-white font-normal',
     outline: 'border border-creatorsfy-gray-bold border-opacity-10 text-gray-800 hover:bg-gray-50',
     secondary: 'bg-creatorsfy-bg-lighter100 text-creatorsfy-gray-bold200',
     ghost: 'text-blue-600 hover:bg-blue-50',
