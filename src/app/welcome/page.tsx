@@ -8,7 +8,7 @@ import Arrow from "../../../public/icons/Vector.svg"
 const WelcomePage = () => {
   return (
     <div 
-      className="flex flex-col items-center justify-end min-h-screen p-8 text-white"
+      className="flex flex-col items-center justify-end h-screen px-8 pb-8 text-white overflow-hidden"
       style={{
         backgroundImage: 'url("/images/background.jpg")',
         backgroundSize: 'cover',
@@ -18,8 +18,8 @@ const WelcomePage = () => {
     >
       <div className="absolute inset-0" />
       
-      <div className="w-full max-w-sm text-center relative z-10 mb-6">
-        <h1 className="text-[39.47px] sm:text-5xl font-normal leading-tight mb-12 text-start">
+      <div className="w-full max-w-sm text-center relative z-10">
+        <h1 className="text-[39.47px] sm:text-5xl font-normal leading-tight mb-8 text-start">
           Monetize{" "} 
           <p>sua influência</p>
           <p>e acompanhe</p>
@@ -36,9 +36,9 @@ const WelcomePage = () => {
               Iniciar Cadastro
             </Link>
           </Button>
-          <p className="text-center text-xl">
+          <p className="text-center text-xl text-white">
             Já possui acesso?{" "}
-            <Link href="/auth/login" className="hover:underline">
+            <Link href="/auth/login" className="text-white hover:underline">
               Entrar
             </Link>
           </p>
