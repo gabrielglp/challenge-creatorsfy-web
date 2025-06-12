@@ -2,7 +2,7 @@
 
 import AuthLayout from "@/layouts/AuthLayout";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Button from "@/components/ui/Button";
 import OTPInput from "@/components/auth/OTPInput";
 import { LeftOutlined } from "@ant-design/icons";
@@ -49,7 +49,7 @@ const CircularLoading: React.FC<CircularLoadingProps> = ({ percentage }) => {
   );
 };
 
-const VerifyEmailPage = () => {
+const VerifyEmailContent = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const email = searchParams.get("email") || "email@gmail.com";
@@ -170,6 +170,14 @@ const VerifyEmailPage = () => {
           )}
         </div>
     </AuthLayout>
+  );
+};
+
+const VerifyEmailPage = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <VerifyEmailContent />
+    </Suspense>
   );
 };
 
