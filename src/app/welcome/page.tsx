@@ -3,17 +3,25 @@
 import Button from "@/components/ui/Button";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import Arrow from "../../../public/icons/Vector.svg"
 
 const WelcomePage = () => {
+  const router = useRouter();
+
+  const handleRegisterClick = () => {
+    router.push("/auth/register");
+  };
+
   return (
     <div 
-      className="flex flex-col items-center justify-end h-screen px-8 pb-8 text-white overflow-hidden"
+      className="fixed inset-0 flex flex-col items-center justify-end px-8 pb-8 text-white"
       style={{
         backgroundImage: 'url("/images/background.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        height: '100dvh' // Dynamic viewport height para Safari
       }}
     >
       <div className="absolute inset-0" />
@@ -31,11 +39,12 @@ const WelcomePage = () => {
         </h1>
         
         <div className="space-y-4">
-          <Button variant="primary" className="bg-white py-4 rounded-sm" fullWidth size="lg">
-            <Link className="text-creatorsfy-blue-deep200 text-xl font-medium" href="/auth/register">
-              Iniciar Cadastro
-            </Link>
-          </Button>
+          <button
+            className="bg-white py-4 rounded-sm text-creatorsfy-blue-deep200 text-xl font-medium w-full"
+            onClick={handleRegisterClick}
+          >
+            Iniciar Cadastro
+          </button>
           <p className="text-center text-xl text-white">
             Já possui acesso?{" "}
             <Link href="/auth/login" className="text-white hover:underline">
